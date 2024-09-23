@@ -83,3 +83,9 @@ body {
     border-radius: 6px;
     font-family: var(--font-grotsek);
 }
+
+@media screen and (max-width: 768px) {
+    .hire {
+        width: 90%;
+    }
+}
