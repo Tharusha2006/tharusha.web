@@ -1,0 +1,234 @@
+:root {
+    --clr-background: #f4f4f4;
+    --clr-web-blue: #005eff;
+    --clr-web-black: #0a0a0a;
+    --font-grotsek: 'Cabinet Grotesk', sans-serif;
+}
+
+::-webkit-scrollbar {
+    background-color: #e6e6e6;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-web-blue);
+    border-radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: #00000000;
+}
+
+body {
+    background-color: var(--clr-background);
+}
+
+.header {
+    max-width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 1px 3px 10px #dedede;
+}
+
+.header h1.name {
+    font-family: var(--font-grotsek);
+    font-size: 2.3rem;
+}
+
+.header .links a {
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.header .links a:nth-child(1) {
+    background-color: var(--clr-web-blue);
+    color: var(--clr-background);
+    font-family: var(--font-grotsek);
+    transition: all .2s ease;
+}
+
+.header .links a:nth-child(2) {
+    border: 1.5px solid var(--clr-web-blue);
+    color: var(--clr-web-blue);
+    font-family: var(--font-grotsek);
+    transition: all .2s ease;
+}
+
+.header .links a:nth-child(2) sup {
+    color: #ffa600;
+}
+
+.header .links a:nth-child(1) i {
+    color: var(--clr-background);
+}
+
+.header .links a:nth-child(1):hover {
+    background-color: #5793fb;
+}
+
+.header .links a:nth-child(2):hover {
+    background-color: var(--clr-web-blue);
+    color: var(--clr-background);
+}
+
+.intro {
+    margin-top: 30px;
+    width: 80%;
+    height: auto;
+    margin-inline: auto;
+}
+
+.intro p.intro-para {
+    font-family: var(--font-grotsek);
+    font-size: 1.2rem;
+}
+
+.collection {
+    margin-top: 100px;
+    margin-inline: auto;
+    width: 85%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.collection .temp {
+    width: 400px;
+    height: 450px;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    box-shadow: 2px 5px 10px #dedede;
+    margin: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.collection .temp .temp-eg {
+    width: 90%;
+    height: 350px;
+    background-color: #dedede;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #848484;
+    font-family: var(--font-grotsek);
+}
+
+.collection .temp .temp-eg i {
+    font-size: 5rem;
+    color: #a8a8a8;
+}
+
+.collection .temp .shop {
+    width: 90%
+}
+
+.collection .temp .shop button {
+    width: 100%;
+    height: 35px;
+    border: 1.5px solid var(--clr-web-blue);
+    border-radius: 6px;
+    background-color: var(--clr-web-blue);
+    color: var(--clr-background);
+    font-family: var(--font-grotsek);
+    font-size: 1rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.collection .temp .shop button:hover {
+    background-color: transparent;
+    color: var(--clr-web-blue);
+}
+
+.more {
+    margin-top: 60px;
+    width: 100%;
+    min-height: 200px;
+    background-color: var(--clr-web-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.more .more-box {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.more .more-box a {
+    color: #fff;
+    font-family: var(--font-grotsek);
+    font-size: 18px;
+    transition: all .2s ease;
+}
+
+.more .more-box a:hover {
+    color: var(--clr-web-blue);
+}
+
+.more h1 {
+    color: #fff;
+    font-family: var(--font-grotsek);
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .header h1.name {
+        font-size: 1.7rem;
+    }
+    .header .links a {
+        padding: 8px 7px;
+        font-size: 0.9rem;
+    }
+    .intro {
+        width: 90%;
+    }
+    .intro p.intro-para {
+        font-size: 1rem;
+    }
+    .collection {
+        width: 90%;
+    }
+    .collection .temp {
+        height: 400px;
+    }
+    .collection .temp .temp-eg {
+        height: 320px;
+    }
+    .collection .temp .temp-eg i {
+        font-size: 4rem;
+    }
+    .collection .temp .shop button {
+        font-size: .9rem;
+    }
+    .more {
+        margin-top: 70px;
+    }
+    .more .more-box {
+        width: 92%;
+    }
+    .more .more-box a {
+        font-size: 15px;
+    }
+}
