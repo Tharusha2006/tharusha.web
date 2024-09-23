@@ -1,0 +1,85 @@
+:root {
+    --clr-background: #f4f4f4;
+    --clr-web-blue: #005eff;
+    --clr-web-black: #0a0a0a;
+    --font-grotsek: 'Cabinet Grotesk', sans-serif;
+}
+
+::-webkit-scrollbar {
+    background-color: #e6e6e6;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-web-blue);
+    border-radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: #00000000;
+}
+
+body {
+    background-color: var(--clr-background);
+    width: 100%;
+    height: 100vh;
+}
+
+.hire {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    box-shadow: 1px 3px 12px #dedede;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hire .hire-txt {
+    font-family: var(--font-grotsek);
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+}
+
+.hire form {
+    width: 90%;
+    height: auto;
+}
+
+.hire form input[type="text"] {
+    height: 100px;
+    overflow: scroll;
+}
+
+.hire form input {
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #d1e2ff;
+    height: 35px;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+    font-family: var(--font-grotsek);
+}
+
+.hire form button {
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: var(--clr-web-blue);
+    color: var(--clr-background);
+    border-radius: 6px;
+    font-family: var(--font-grotsek);
+}
